@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EMAPOT - Főoldal</title>
+    <title>EMAPOT - Termékek</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -15,9 +15,9 @@
         theme: {
           extend: {
             colors: {
-              primary: "#003366" /* Original Blue */,
+              primary: "#003366",
               secondary: "#005b9f",
-              accent: "#ffcc00" /* Original Yellow */,
+              accent: "#ffcc00",
               light: "#f8f9fa",
               dark: "#1a1a1a",
             },
@@ -54,7 +54,7 @@
           <div class="hidden md:flex items-center space-x-6">
             <a
               href="index.html"
-              class="text-primary font-bold hover:text-accent transition-colors border-b-2 border-accent"
+              class="text-gray-600 font-medium hover:text-accent transition-colors"
               data-i18n="nav_home"
               >Főoldal</a
             >
@@ -66,7 +66,7 @@
             >
             <a
               href="products.html"
-              class="text-gray-600 font-medium hover:text-accent transition-colors"
+              class="text-primary font-bold hover:text-accent transition-colors border-b-2 border-accent"
               data-i18n="nav_products"
               >Termékek</a
             >
@@ -137,7 +137,7 @@
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <a
             href="index.html"
-            class="block px-3 py-2 text-base font-bold text-primary bg-gray-50"
+            class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-accent hover:bg-gray-50"
             data-i18n="nav_home"
             >Főoldal</a
           >
@@ -149,7 +149,7 @@
           >
           <a
             href="products.html"
-            class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-accent hover:bg-gray-50"
+            class="block px-3 py-2 text-base font-bold text-primary bg-gray-50"
             data-i18n="nav_products"
             >Termékek</a
           >
@@ -201,107 +201,118 @@
 
     <!-- Main Content -->
     <main class="flex-grow">
-      <!-- Hero Section -->
-      <section
-        class="relative h-[80vh] flex items-center justify-center bg-primary overflow-hidden"
-      >
-        <div class="absolute inset-0 z-0">
-          <img
-            src="https://www.emapot.hu/resize/homebox/1/thumb/a_3b%20(1).jpg"
-            alt="Conveyor Background"
-            class="w-full h-full object-cover opacity-30"
-          />
-          <div
-            class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/60"
-          ></div>
-        </div>
-
-        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+      <!-- Page Header -->
+      <div class="bg-primary py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1
-            class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight"
-            data-i18n="hero_title"
+            class="text-4xl font-bold text-white mb-4"
+            data-i18n="products_title"
           >
-            Mi szállítjuk a termelékenységet!
+            Termékeink
           </h1>
-          <p
-            class="text-lg md:text-2xl text-gray-200 mb-10 font-light"
-            data-i18n="hero_subtitle"
-          >
-            Több mint 40 év tapasztalat az ipari anyagmozgatásban és konvejor
-            rendszerek tervezésében.
-          </p>
-          <a
-            href="products.html"
-            class="inline-block bg-accent hover:bg-yellow-500 text-primary font-bold py-4 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg"
-            data-i18n="hero_cta"
-            >Ismerje meg termékeinket</a
-          >
+          <div class="w-24 h-1 bg-accent mx-auto rounded"></div>
         </div>
-      </section>
+      </div>
 
-      <!-- News / R&D Section -->
-      <section class="py-20 bg-white">
+      <!-- Products Section -->
+      <section class="py-20 bg-light">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-16">
-            <h2
-              class="text-3xl md:text-4xl font-bold text-primary mb-4"
-              data-i18n="news_title"
-            >
-              Aktuális Fejlesztések
-            </h2>
-            <div class="w-24 h-1 bg-accent mx-auto rounded"></div>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <!-- News Item 1 -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Product 1 -->
             <div
-              class="bg-light rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border-t-4 border-primary"
+              class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group border-t-4 border-primary"
             >
-              <div class="h-64 overflow-hidden">
+              <div class="h-64 overflow-hidden relative">
                 <img
-                  src="https://www.emapot.hu/resize/news/5/thumb/AGV.jpg"
-                  alt="AGV"
-                  class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  src="https://www.emapot.hu/resize/homebox/1/thumb/a_3b%20(1).jpg"
+                  alt="K2 Konvejor"
+                  class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
+                <div
+                  class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-300"
+                ></div>
               </div>
               <div class="p-8">
                 <h3
-                  class="text-2xl font-bold text-primary mb-3"
-                  data-i18n="news_1_title"
+                  class="text-2xl font-bold text-primary mb-4"
+                  data-i18n="prod_k2_title"
                 >
-                  Automatikus anyagátadó rendszer
+                  K2-es konvejor
                 </h3>
-                <p class="text-gray-600" data-i18n="news_1_desc">
-                  Függőkonvejor és vezetőnélküli targonca közötti automatikus
-                  anyagátadó rendszer fejlesztése. A berendezés a rakományt
-                  átveszi a konvejorról, majd függőleges süllyesztés után egy
-                  vezetőnélküli targoncára adja át.
+                <p
+                  class="text-gray-600 mb-6 leading-relaxed"
+                  data-i18n="prod_k2_desc"
+                >
+                  Az elmúlt évtizedek szállítási feladatainak elemzése után az
+                  EMAPOT fejlesztői és vezetői úgy döntöttek, hogy érdemes
+                  kifejleszteni egy alacsonyabb terhelési tartományban
+                  használható konvejor családot. Akár 100 kg / függeszték
+                  terheléssel.
                 </p>
               </div>
             </div>
 
-            <!-- News Item 2 -->
+            <!-- Product 2 -->
             <div
-              class="bg-light rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border-t-4 border-accent"
+              class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group border-t-4 border-accent"
             >
-              <div class="h-64 overflow-hidden">
+              <div class="h-64 overflow-hidden relative">
                 <img
-                  src="https://www.emapot.hu/files/images/vekop_header_s.jpg"
-                  alt="Trailer"
-                  class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  src="https://www.emapot.hu/resize/homebox/2/thumb/Fuggesztek.jpg"
+                  alt="K3 Konvejor"
+                  class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
+                <div
+                  class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-300"
+                ></div>
               </div>
               <div class="p-8">
                 <h3
-                  class="text-2xl font-bold text-primary mb-3"
-                  data-i18n="news_2_title"
+                  class="text-2xl font-bold text-primary mb-4"
+                  data-i18n="prod_k3_title"
                 >
-                  Prémium utánfutó
+                  K3-as konvejor
                 </h3>
-                <p class="text-gray-600" data-i18n="news_2_desc">
-                  Egyedi tervezésű zárt prémium utánfutó fejlesztése, amely a
-                  legmagasabb minőségi követelményeknek is megfelel a
-                  biztonságos szállítás érdekében.
+                <p
+                  class="text-gray-600 mb-6 leading-relaxed"
+                  data-i18n="prod_k3_desc"
+                >
+                  Napjaink szállítási feladatait nagyobbrészt egy közepes
+                  terhelési tartományban használható konvejor család biztosítja.
+                  Ez a K3E egypályás konvejoroknál 70kg / függeszték, míg a K3P
+                  kétpályás konvejoroknál 200kg / függeszték terhelést jelent.
+                </p>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div
+              class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group border-t-4 border-primary"
+            >
+              <div class="h-64 overflow-hidden relative">
+                <img
+                  src="https://www.emapot.hu/resize/homebox/3/thumb/b1%20(1).jpg"
+                  alt="Görgőspálya"
+                  class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                />
+                <div
+                  class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-300"
+                ></div>
+              </div>
+              <div class="p-8">
+                <h3
+                  class="text-2xl font-bold text-primary mb-4"
+                  data-i18n="prod_roller_title"
+                >
+                  Görgőspálya
+                </h3>
+                <p
+                  class="text-gray-600 mb-6 leading-relaxed"
+                  data-i18n="prod_roller_desc"
+                >
+                  A görgőspályák egyszerű és hatékony eszközei a beltéri ipari
+                  szállításnak, különösen alkalmasak dobozok, raklapok, rekeszek
+                  és egyéb ömlesztett vagy palettázott áruk mozgatására.
                 </p>
               </div>
             </div>

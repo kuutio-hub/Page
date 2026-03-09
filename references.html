@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EMAPOT - Főoldal</title>
+    <title>EMAPOT - Referenciák</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -15,9 +15,9 @@
         theme: {
           extend: {
             colors: {
-              primary: "#003366" /* Original Blue */,
+              primary: "#003366",
               secondary: "#005b9f",
-              accent: "#ffcc00" /* Original Yellow */,
+              accent: "#ffcc00",
               light: "#f8f9fa",
               dark: "#1a1a1a",
             },
@@ -54,7 +54,7 @@
           <div class="hidden md:flex items-center space-x-6">
             <a
               href="index.html"
-              class="text-primary font-bold hover:text-accent transition-colors border-b-2 border-accent"
+              class="text-gray-600 font-medium hover:text-accent transition-colors"
               data-i18n="nav_home"
               >Főoldal</a
             >
@@ -72,7 +72,7 @@
             >
             <a
               href="references.html"
-              class="text-gray-600 font-medium hover:text-accent transition-colors"
+              class="text-primary font-bold hover:text-accent transition-colors border-b-2 border-accent"
               data-i18n="nav_references"
               >Referenciák</a
             >
@@ -137,7 +137,7 @@
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <a
             href="index.html"
-            class="block px-3 py-2 text-base font-bold text-primary bg-gray-50"
+            class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-accent hover:bg-gray-50"
             data-i18n="nav_home"
             >Főoldal</a
           >
@@ -155,7 +155,7 @@
           >
           <a
             href="references.html"
-            class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-accent hover:bg-gray-50"
+            class="block px-3 py-2 text-base font-bold text-primary bg-gray-50"
             data-i18n="nav_references"
             >Referenciák</a
           >
@@ -201,108 +201,94 @@
 
     <!-- Main Content -->
     <main class="flex-grow">
-      <!-- Hero Section -->
-      <section
-        class="relative h-[80vh] flex items-center justify-center bg-primary overflow-hidden"
-      >
-        <div class="absolute inset-0 z-0">
-          <img
-            src="https://www.emapot.hu/resize/homebox/1/thumb/a_3b%20(1).jpg"
-            alt="Conveyor Background"
-            class="w-full h-full object-cover opacity-30"
-          />
-          <div
-            class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/60"
-          ></div>
-        </div>
-
-        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <h1
-            class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight"
-            data-i18n="hero_title"
-          >
-            Mi szállítjuk a termelékenységet!
+      <!-- Page Header -->
+      <div class="bg-primary py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 class="text-4xl font-bold text-white mb-4" data-i18n="ref_title">
+            Referenciák
           </h1>
-          <p
-            class="text-lg md:text-2xl text-gray-200 mb-10 font-light"
-            data-i18n="hero_subtitle"
-          >
-            Több mint 40 év tapasztalat az ipari anyagmozgatásban és konvejor
-            rendszerek tervezésében.
-          </p>
-          <a
-            href="products.html"
-            class="inline-block bg-accent hover:bg-yellow-500 text-primary font-bold py-4 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg"
-            data-i18n="hero_cta"
-            >Ismerje meg termékeinket</a
-          >
+          <div class="w-24 h-1 bg-accent mx-auto rounded"></div>
         </div>
-      </section>
+      </div>
 
-      <!-- News / R&D Section -->
+      <!-- References Section -->
       <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-16">
-            <h2
-              class="text-3xl md:text-4xl font-bold text-primary mb-4"
-              data-i18n="news_title"
-            >
-              Aktuális Fejlesztések
-            </h2>
-            <div class="w-24 h-1 bg-accent mx-auto rounded"></div>
-          </div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p
+            class="text-xl text-center text-gray-600 mb-12"
+            data-i18n="ref_desc"
+          >
+            Büszkék vagyunk az elmúlt évtizedekben megvalósított projektjeinkre.
+            Néhány kiemelt partnerünk és munkánk:
+          </p>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <!-- News Item 1 -->
+          <div class="space-y-6">
+            <!-- Ref 1 -->
             <div
-              class="bg-light rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border-t-4 border-primary"
+              class="bg-light p-6 rounded-lg border-l-4 border-primary flex flex-col md:flex-row md:items-center justify-between shadow-sm hover:shadow-md transition-shadow"
             >
-              <div class="h-64 overflow-hidden">
-                <img
-                  src="https://www.emapot.hu/resize/news/5/thumb/AGV.jpg"
-                  alt="AGV"
-                  class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div class="p-8">
+              <div class="mb-4 md:mb-0">
                 <h3
-                  class="text-2xl font-bold text-primary mb-3"
-                  data-i18n="news_1_title"
+                  class="text-2xl font-bold text-primary"
+                  data-i18n="ref_1_client"
                 >
-                  Automatikus anyagátadó rendszer
+                  AUDI - Ingolstadt
                 </h3>
-                <p class="text-gray-600" data-i18n="news_1_desc">
-                  Függőkonvejor és vezetőnélküli targonca közötti automatikus
-                  anyagátadó rendszer fejlesztése. A berendezés a rakományt
-                  átveszi a konvejorról, majd függőleges süllyesztés után egy
-                  vezetőnélküli targoncára adja át.
+                <p class="text-gray-600 mt-2" data-i18n="ref_1_desc">
+                  Gépjármű emelő rendszer tervezése és kivitelezése.
                 </p>
+              </div>
+              <div
+                class="bg-accent text-primary font-bold py-2 px-6 rounded-full inline-block text-center whitespace-nowrap"
+                data-i18n="ref_1_year"
+              >
+                2016
               </div>
             </div>
 
-            <!-- News Item 2 -->
+            <!-- Ref 2 -->
             <div
-              class="bg-light rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border-t-4 border-accent"
+              class="bg-light p-6 rounded-lg border-l-4 border-secondary flex flex-col md:flex-row md:items-center justify-between shadow-sm hover:shadow-md transition-shadow"
             >
-              <div class="h-64 overflow-hidden">
-                <img
-                  src="https://www.emapot.hu/files/images/vekop_header_s.jpg"
-                  alt="Trailer"
-                  class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div class="p-8">
+              <div class="mb-4 md:mb-0">
                 <h3
-                  class="text-2xl font-bold text-primary mb-3"
-                  data-i18n="news_2_title"
+                  class="text-2xl font-bold text-primary"
+                  data-i18n="ref_2_client"
                 >
-                  Prémium utánfutó
+                  Magyar Suzuki Zrt.
                 </h3>
-                <p class="text-gray-600" data-i18n="news_2_desc">
-                  Egyedi tervezésű zárt prémium utánfutó fejlesztése, amely a
-                  legmagasabb minőségi követelményeknek is megfelel a
-                  biztonságos szállítás érdekében.
+                <p class="text-gray-600 mt-2" data-i18n="ref_2_desc">
+                  Különböző konvejor rendszerek és anyagmozgató berendezések.
                 </p>
+              </div>
+              <div
+                class="bg-gray-200 text-gray-700 font-bold py-2 px-6 rounded-full inline-block text-center whitespace-nowrap"
+                data-i18n="ref_2_year"
+              >
+                Folyamatos
+              </div>
+            </div>
+
+            <!-- Ref 3 -->
+            <div
+              class="bg-light p-6 rounded-lg border-l-4 border-primary flex flex-col md:flex-row md:items-center justify-between shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div class="mb-4 md:mb-0">
+                <h3
+                  class="text-2xl font-bold text-primary"
+                  data-i18n="ref_3_client"
+                >
+                  Knorr-Bremse
+                </h3>
+                <p class="text-gray-600 mt-2" data-i18n="ref_3_desc">
+                  Szerelősori kiszolgáló rendszerek és görgőspályák.
+                </p>
+              </div>
+              <div
+                class="bg-gray-200 text-gray-700 font-bold py-2 px-6 rounded-full inline-block text-center whitespace-nowrap"
+                data-i18n="ref_3_year"
+              >
+                Több projekt
               </div>
             </div>
           </div>
