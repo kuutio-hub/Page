@@ -255,42 +255,39 @@
                 </p>
 
                 <h3
-                  class="text-xl font-bold text-primary mt-8 mb-4 border-b border-gray-300 pb-2"
+                  class="text-2xl font-bold text-primary mt-12 mb-6 border-b border-gray-200 pb-4"
                   data-i18n="prod_roller_types_title"
                 >
                   A görgőspályák típusai és alkalmazásai:
                 </h3>
 
-                <ul class="space-y-6 list-none pl-0 mt-6">
-                  <li
-                    class="flex items-start bg-white p-6 rounded-lg shadow-sm border border-gray-100"
-                  >
-                    <i
-                      class="fas fa-angle-double-right text-accent mt-1 mr-4 text-xl"
-                    ></i>
-                    <span data-i18n="prod_roller_type_1" class="leading-relaxed"
-                      >Szabadonfutó görgőspályák: Ezek hajtatlan rendszerek,
-                      amelyek kiválóan alkalmasak vízszintes vagy enyhe lejtésű
-                      felületekre. Néhány fokos lejtéssel beállítva gravitációs
-                      erővel mozgathatják az árut, legyen szó akár néhány
-                      kilogrammos dobozokról vagy akár 100 kg-os
-                      rakományokról.</span
-                    >
-                  </li>
-                  <li
-                    class="flex items-start bg-white p-6 rounded-lg shadow-sm border border-gray-100"
-                  >
-                    <i
-                      class="fas fa-angle-double-right text-accent mt-1 mr-4 text-xl"
-                    ></i>
-                    <span data-i18n="prod_roller_type_2" class="leading-relaxed"
-                      >Hajtott görgőspályák: Ezek motorizált rendszerek, amelyek
-                      lehetővé teszik a termékek mozgatását vízszintes vagy akár
-                      enyhe emelkedésű felületeken is. Kiválóan alkalmasak
-                      torlasztási feladatok ellátására is.</span
-                    >
-                  </li>
-                </ul>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 mt-6">
+                  <!-- Szabadonfutó -->
+                  <div class="glass-card p-6">
+                    <div class="flex items-start mb-4">
+                      <div class="bg-accent text-primary rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl mr-4 shrink-0">
+                        <i class="fas fa-angle-double-down"></i>
+                      </div>
+                      <h4 class="text-xl font-bold text-secondary" data-i18n="prod_roller_type_1_title">Szabadonfutó görgőspályák</h4>
+                    </div>
+                    <p class="text-sm text-gray-700 leading-relaxed" data-i18n="prod_roller_type_1_desc">
+                      Ezek hajtatlan rendszerek, amelyek kiválóan alkalmasak vízszintes vagy enyhe lejtésű felületekre. Néhány fokos lejtéssel beállítva gravitációs erővel mozgathatják az árut, legyen szó akár néhány kilogrammos dobozokról vagy akár 100 kg-os rakományokról.
+                    </p>
+                  </div>
+
+                  <!-- Hajtott -->
+                  <div class="glass-card p-6">
+                    <div class="flex items-start mb-4">
+                      <div class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl mr-4 shrink-0">
+                        <i class="fas fa-cogs"></i>
+                      </div>
+                      <h4 class="text-xl font-bold text-secondary" data-i18n="prod_roller_type_2_title">Hajtott görgőspályák</h4>
+                    </div>
+                    <p class="text-sm text-gray-700 leading-relaxed" data-i18n="prod_roller_type_2_desc">
+                      Ezek motorizált rendszerek, amelyek lehetővé teszik a termékek mozgatását vízszintes vagy akár enyhe emelkedésű felületeken is. Kiválóan alkalmasak torlasztási feladatok ellátására is.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               <div class="mt-10 flex justify-center">

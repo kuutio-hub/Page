@@ -260,20 +260,57 @@
                 </p>
 
                 <h3
-                  class="text-xl font-bold text-primary mt-8 mb-4 border-b border-gray-300 pb-2"
+                  class="text-2xl font-bold text-primary mt-12 mb-6 border-b border-gray-200 pb-4"
                   data-i18n="prod_k3_components_title"
                 >
                   A rendszerhez választható alkotóelemek:
                 </h3>
-                <p
-                  class="mb-6 leading-relaxed bg-gray-100 p-6 rounded-lg border-l-4 border-accent"
-                  data-i18n="prod_k3_components"
-                >
-                  K3-as konvejorlánc, K3-as kocsiszerelvények, K33-as
-                  pályaszakaszok, K33-as szerelő-pályaszakaszok, K33-as
-                  dilatáló-pályaszakaszok, Lánckenő berendezés, K3-as hajtás,
-                  K3-as feszítőállomás, K33-as váltók, K33-as megállító.
-                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                  <!-- K3-as konvejorlánc -->
+                  <div class="glass-card p-6">
+                    <h4 class="text-xl font-bold text-secondary mb-3" data-i18n="k3_comp_chain_title">K3-as konvejorlánc</h4>
+                    <p class="text-sm text-gray-600 mb-4" data-i18n="k3_comp_chain_desc">Vonóeszköz és egyidejűleg teherhordozó is az egypályás konvejornál és vonóelem a kétpályás rendszerekben.</p>
+                    <ul class="text-sm text-gray-700 space-y-2">
+                      <li><i class="fas fa-check text-accent mr-2"></i><span data-i18n="k3_comp_chain_1">Teherkocsi terhelhetősége: max. 70-100 kg</span></li>
+                      <li><i class="fas fa-check text-accent mr-2"></i><span data-i18n="k3_comp_chain_2">Lánc vonóerő: max. 5000 N</span></li>
+                      <li><i class="fas fa-check text-accent mr-2"></i><span data-i18n="k3_comp_chain_3">Szakító terhelés: ~ 64000 N</span></li>
+                      <li><i class="fas fa-check text-accent mr-2"></i><span data-i18n="k3_comp_chain_4">Hőmérséklet tartomány: -10°C-tól +150°C-ig (speciális zsírozással +240°C-ig)</span></li>
+                    </ul>
+                  </div>
+
+                  <!-- K3-as kocsiszerelvények -->
+                  <div class="glass-card p-6">
+                    <h4 class="text-xl font-bold text-secondary mb-3" data-i18n="k3_comp_trolley_title">K3-as kocsiszerelvények</h4>
+                    <p class="text-sm text-gray-600 mb-4" data-i18n="k3_comp_trolley_desc">A továbbítandó áru felvétele és szállítása. Vezető és hátsó teherkocsiból és összekötő rudazatból áll.</p>
+                    <ul class="text-sm text-gray-700 space-y-2">
+                      <li><i class="fas fa-check text-accent mr-2"></i><span data-i18n="k3_comp_trolley_1">Terhelhetőség vízszintesen: 400 kg</span></li>
+                      <li><i class="fas fa-check text-accent mr-2"></i><span data-i18n="k3_comp_trolley_2">Terhelhetőség 30º-os emelkedésnél: 300 kg</span></li>
+                      <li><i class="fas fa-check text-accent mr-2"></i><span data-i18n="k3_comp_trolley_3">Terhelhetőség 45º-os emelkedésnél: 250 kg</span></li>
+                      <li><i class="fas fa-check text-accent mr-2"></i><span data-i18n="k3_comp_trolley_4">Bővíthető közbenső teherkocsikkal nagy méretekhez</span></li>
+                    </ul>
+                  </div>
+
+                  <!-- K33-as pályaszakaszok -->
+                  <div class="glass-card p-6">
+                    <h4 class="text-xl font-bold text-secondary mb-3" data-i18n="k3_comp_track_title">K33-as pályaszakaszok</h4>
+                    <p class="text-sm text-gray-600 mb-4" data-i18n="k3_comp_track_desc">A vonólánc megvezetése és a teher hordása. Hidegen hajlított idomacélokból készülnek.</p>
+                    <ul class="text-sm text-gray-700 space-y-2">
+                      <li><i class="fas fa-check text-accent mr-2"></i><span data-i18n="k3_comp_track_1">Szállítási hossz: max. 6000 mm</span></li>
+                      <li><i class="fas fa-check text-accent mr-2"></i><span data-i18n="k3_comp_track_2">Szakaszterhelhetőség (egypályás): 100 kg/m</span></li>
+                      <li><i class="fas fa-check text-accent mr-2"></i><span data-i18n="k3_comp_track_3">Szakaszterhelhetőség (kétpályás): 250 kg/m</span></li>
+                      <li><i class="fas fa-check text-accent mr-2"></i><span data-i18n="k3_comp_track_4">Tetszőleges nyomvonal kialakítása ívekkel</span></li>
+                    </ul>
+                  </div>
+
+                  <!-- További elemek -->
+                  <div class="glass-card p-6 flex flex-col justify-center">
+                    <h4 class="text-xl font-bold text-secondary mb-3" data-i18n="k3_comp_other_title">További rendszerelemek</h4>
+                    <p class="text-sm text-gray-700 leading-relaxed" data-i18n="k3_comp_other_desc">
+                      K33-as szerelő-pályaszakaszok, K33-as dilatáló-pályaszakaszok, Lánckenő berendezés, K3-as hajtás, K3-as feszítőállomás, K33-as váltók, K33-as megállító.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               <div class="mt-10 flex justify-center">
